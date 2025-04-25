@@ -1,0 +1,12 @@
+1. Load image paths, extract labels, and store in a DataFrame.
+2. Split the DataFrame into training and testing sets.
+3. Load and preprocess images for training and testing:
+    - Either use ImageDataGenerator or load images manually using load_img.
+    - Resize and normalize images.
+4. Encode labels using LabelEncoder and to_categorical.
+5. Create a CNN model using Sequential, adding layers like Conv2D, MaxPooling2D, Flatten, and Dense.
+6. Compile the model with an optimizer, loss function, and metrics.
+7. Train the model using model.fit on the training data and validate with the testing data.
+8. Evaluate the model's performance using model.evaluate and classification_report.
+9. Save the trained model to a file using model.save.
+10. Load the saved model using load_model when needed.
